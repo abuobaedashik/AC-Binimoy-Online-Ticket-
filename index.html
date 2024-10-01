@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Ticketing System</title>
+    <!-- google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- tailwind cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- daisy Ui Cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+       .banner{
+         background-image:url(./images/banner.png);
+         background-position: center;
+         background-repeat: no-repeat;
+         background-size: cover;
+       }
+    </style>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                  primary: '',
+                  secondery: 'rgb(29, 209, 0)',
+              },
+              fontFamily:{
+                 inter:'Inter',
+                 raleway: 'Raleway',
+              },
+            },
+          },
+        }
+      </script>
+</head>
+<body class="font-inter">
+    <header class=" mx-auto">
+        <!-- navber  -->
+        <div class="navbar bg-base-100 w-10/12 mx-auto mt-8 space-x-40">
+            <div class="navbar-start">
+              
+              <a class="ml-0 font-bold text-2xl">Binimoy AC</a>
+            </div>
+            <div class="navbar-center hidden md:flex ">
+              <ul class="menu menu-horizontal px-1">
+                <li><a>Home</a></li>
+                <li><a>Menu</a></li>
+                <li><a>Destination</a></li>
+                <li><a>Search</a></li>
+              </ul>
+            </div>
+              <a class="btn text-secondery border border-[rgba(29, 209, 0, 0.4)]">BUS<img src="./images/bus-icon.png" alt="icon"></a>   
+              </div>
+            </div>
+          </div>
+          <!-- Banner  -->
+           <div class="relative  banner py-12 pb-28 bg-red-500 border border-black rounded-xl  banner w-full md:w-10/12 mx-auto mt-5 text-raleway text-center">
+               <h3 class="text-center text-white text-6xl font-extrabold ">End-to-End Travel with</h3>
+               <h3 class="text-secondery text-center mt-4 text-6xl font-extrabold ">Binimoy Ac</h3>
+               <h3 class=" text-center mt-8 text-white text-lg font- opacity-80 ">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined.</h3>
+                <div class="flex items-center justify-center">
+                  <button class="btn border-none bg-secondery mt-8">Buy Ticket</button>
+                </div>
+               <!--All cards -->
+                <!-- card 1 -->
+            <div class="items-center justify-center absolute left-[80px] -bottom-5 flex gap-8 p-5 w-72 h-20 bg-white rounded-3xl border-y border-[rgb(29, 209, 0)]">
+              <div class="icon"><img src="./images/people.png" alt="people"></div>
+             <div class="text">
+               <p class="text-black text-3xl font-bold">500K+</p>
+               <p>Registered users</p>
+             </div>
+          </div>
+          <!-- card 2 -->
+          <div class=" absolute justify-center items-center left-[400px] w-72 h-20 -bottom-5 flex gap-8 p-5 bg-white rounded-3xl border border-[rgb(29, 209, 0)]">
+              <div class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-16  text-[#04c804]">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 6v.75m0 3v.75m0 3v.75m0 3V18m-9-5.25h5.25M7.5 15h3M3.375 5.25c-.621 0-1.125.504-1.125 1.125v3.026a2.999 2.999 0 0 1 0 5.198v3.026c0 .621.504 1.125 1.125 1.125h17.25c.621 0 1.125-.504 1.125-1.125v-3.026a2.999 2.999 0 0 1 0-5.198V6.375c0-.621-.504-1.125-1.125-1.125H3.375Z" />
+                </svg>                  
+              </div>
+             <div class="text">
+               <p class="text-black text-3xl font-bold">1.7 lacks</p>
+               <p>Tickets sold</p>
+             </div>
+          </div>
+          <!-- card 3 -->
+          <div class="justify-center items-center absolute left-[720px] w-72 h-20 -bottom-5 flex gap-8 p-5 bg-white rounded-3xl border-y border-[rgb(29, 209, 0)]">
+              <div class="icon">
+
+                <svg width="54.666626" height="49.333374" viewBox="0 0 54.6666 49.3334" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <defs/>
+                  <path id="Vector" d="M2.78 2.78C3.28 2.28 3.95 2 4.66 2L10 2C10.7 2 11.38 2.28 11.88 2.78C12.38 3.28 12.66 3.95 12.66 4.66L12.66 15.33C12.66 16.04 12.38 16.71 11.88 17.21C11.38 17.71 10.7 18 10 18L4.66 18C3.95 18 3.28 17.71 2.78 17.21C2.28 16.71 2 16.04 2 15.33L2 4.66C2 3.95 2.28 3.28 2.78 2.78ZM38.22 43.1C39.22 44.1 40.58 44.66 42 44.66C43.41 44.66 44.77 44.1 45.77 43.1C46.77 42.1 47.33 40.74 47.33 39.33C47.33 37.91 46.77 36.56 45.77 35.56C44.77 34.56 43.41 34 42 34C40.58 34 39.22 34.56 38.22 35.56C37.22 36.56 36.66 37.91 36.66 39.33C36.66 40.74 37.22 42.1 38.22 43.1ZM20.66 7.33L39.33 7.33C46.69 7.33 52.66 15.69 52.66 26L52.66 39.33L47.33 39.33M36.66 39.33L15.33 39.33M36.66 7.33L40.66 26L52.66 26M19.33 20.66L39.33 20.66M26 7.33L26 20.66M7.33 18L7.33 47.33" stroke="#1DD100" stroke-opacity="1.000000" stroke-width="4.000000" stroke-linejoin="round" stroke-linecap="round"/>
+                </svg>
+                
+              </div>
+             <div class="text">
+               <p class="text-black text-3xl font-bold">500K+</p>
+               <p>Rental partners</p>
+             </div>
+          </div>
+           </div>        
+    </header>
+    <main class="w-10/12 mx-auto my-24">
+       <h1 class="text-center text-4xl font-bold mb-8">Best offers for you</h1>
+        <div class="my-6 flex flex-col lg:flex-row items-center justify-center gap-12">
+          <!-- 1st card  -->
+          <div class="flex gap-8 px-10 rounded-3xl bg-[#FFBF0F] h-36">
+            <div>
+              <p class="pt-4 text-3xl font-bold text-black">15% OFF </p>
+              <p>on your next purchase</p> 
+              <p class="pb-4">use by January 2024</p>
+            </div>
+             <img src="./images/info-devider.png" alt="">
+            <div>
+              <p class="pt-10 raleway text-2xl font-bold">NEW15</p>
+              <p class="pb-10">Coupon Code</p>
+            </div>
+          </div>
+          <!-- 2nd card -->
+          <div class="flex gap-8 px-10 rounded-3xl bg-[#F78C9C] h-36">
+            <div>
+              <p class="pt-4 text-3xl font-bold text-black ">20% OFF </p>
+              <p>on your next purchase</p> 
+              <p class="pb-6">use by January 2024</p>
+            </div>
+             <img src="./images/info-devider.png" alt="">
+            <div>
+              <p class="pt-10 raleway text-2xl font-bold">Obaed 20</p>
+              <p class="pb-10">Coupon Code</p>
+            </div>
+          </div>
+        </div>
+         <div class="flex text-center items-center">
+          <button class="btn mt-5 m-auto text-[#1DD100]">See All Offers</button>
+         </div>
+    </main>
+    <!-- ticketing funtionality -->
+     <section class="rounded-[88px_88px_0px_0px] bg-[#F7F8F8] pb-12">
+        <h1 class="text-center text-3xl font-bold pt-32">Binimoy Paribahan</h1>
+        <h3 class="text-center mt-6 ml-8 font-medium mb-12 text-[#0307128a]">Yes, you can run unit tests and view the results directly within the app. The integrated <br> testing features allow for a streamlined .</h3>
+
+        <!-- bus driscription -->
+         <div class="total-card bg-white flex mx-24 rounded-3xl mb-12">
+          <div class="main-card w-4/6">
+             <div class="head flex items-center justify-around py-7">
+               <div class="sub1">
+                 <p class="text-black text-2xl mt-4">Binimoy Paribahan</p>
+                 <p class=" text-base text-[#0307128a] ">Coach-9045 ! AC Business Class</p>
+               </div>
+               <div class="sub2">
+                <button class="flex gap-2 btn text-base text-[#1DD100]">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 3v11.25A2.25 2.25 0 0 0 6 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0 1 18 16.5h-2.25m-7.5 0h7.5m-7.5 0-1 3m8.5-3 1 3m0 0 .5 1.5m-.5-1.5h-9.5m0 0-.5 1.5m.75-9 3-3 2.148 2.148A12.061 12.061 0 0 1 16.5 7.605" />
+                  </svg>
+                   <p> 40 Seats left</p>
+                </button>
+              </div>
+             </div>
+             <!-- main-body -->
+              <div class="bg-[#F7F8F8] mt-6 mx-5 rounded-3xl text-[#030712bb]">
+                <div class="flex items-center justify-between px-7 pt-7">
+                   <div>Route</div>
+                   <div>Dhaka-Tangail</div>
+                </div>
+                <div class="flex items-center justify-between px-7 mt-5">
+                   <div>Departure Time</div>
+                   <div> 8:00 PM</div>
+                </div>
+                <div class="flex items-center gap-3 px-7 mt-6 pb-3 ">
+                   <button class="btn text-sm">Boarding Point- Dhaka</button>
+
+                   <button class="btn text-sm">Dropping Point -Dhanbari</button>
+                    
+                   <button class="btn text-sm">Est.Time - 4 Hour</button>
+                </div>
+
+              </div>
+          </div>
+          <img class="h-[400px]" src="./images/info-devider.png" alt="">
+          <div class="sub-card w-2/6 py-7">
+             <div class="img flex items-center justify-center mt-28"> <img src="./images/fare.png" alt=""></div>
+            <h1 class="text-black text-2xl text-center mt-4 ">550 Taka</h1>
+            <h4 class="text-center text-lg text-[#0307128a] ">Per Seat</h4>
+          </div>
+         </div>
+     </section>
+</body>
+</html>
